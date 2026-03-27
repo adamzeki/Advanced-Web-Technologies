@@ -29,6 +29,7 @@ header,
     min-height: 280px; 
 }
 
+/* Smooth scrolling for anchor links */
 html {
     scroll-behavior: smooth;
 }
