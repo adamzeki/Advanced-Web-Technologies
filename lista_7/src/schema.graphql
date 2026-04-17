@@ -5,6 +5,16 @@ type Query {
     user(id: ID!): User
 }
 
+type Mutation {
+    addUser(name: String!, email: String!, login: String!): User
+    updateUser(id: ID!, name: String, email: String, login: String): User
+    deleteUser(id: ID!): Boolean
+
+    addTodo(title: String!, userId: ID!): ToDoItem
+    updateTodo(id: ID!, title: String, userId: ID): ToDoItem
+    deleteTodo(id: ID!): Boolean
+}
+
 type ToDoItem{
     id: ID!
     title: String!
